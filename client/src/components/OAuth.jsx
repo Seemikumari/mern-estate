@@ -26,7 +26,7 @@ export default function OAuth() {
             photo:result.user.photoURL}),
         })
         const data = await res.json()
-        dispatchEvent(signInSuccess(data));
+        dispatch(signInSuccess(data));
         navigate('/');
 
        } catch(error) {
